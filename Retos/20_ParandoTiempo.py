@@ -19,7 +19,7 @@ async def suma_con_delay(num1: int, num2: int, delay: int):
     sum=num2+num1
     await asyncio.sleep(delay)
     end = time.time()
-    print(f"Se ha tardado en realizar la suma {num1}+{num2}: {end-start} segundos")
+    print(f"Se ha tardado en realizar la suma {num1}+{num2}={sum}: {end-start} segundos")
 
 async def main():
     await asyncio.gather(
